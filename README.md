@@ -39,5 +39,5 @@ git clone https://github.com/indhiraya/Design-and-Analysis-Algorithms
   npm run build
   npm run deploy
   ```
-- then open your url site https://<USERNAME>.github.io/<REPO-NAME>/
+- then open your url site https://username.github.io/repo-name/
   
