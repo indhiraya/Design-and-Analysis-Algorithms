@@ -1,0 +1,187 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-color: #d9f99d;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.board {
+  display: grid;
+  gap: 4px;
+  background-color: #a2c97f;
+  padding: 10px;
+  border-radius: 12px;
+  width: max-content;
+  margin: auto;
+}
+
+@keyframes shake {
+  0% { transform: translate(0); }
+  20% { transform: translate(-10px, 0); }
+  40% { transform: translate(10px, 0); }
+  60% { transform: translate(-10px, 0); }
+  80% { transform: translate(10px, 0); }
+  100% { transform: translate(0); }
+}
+
+.board.shake {
+  animation: shake 0.5s;
+  border: 2px solid red;
+}
+
+.cell {
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  border: 1px solid #8fbc8f;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  padding: 1px;
+}
+
+.cell:hover {
+  background-color: #bfbfbf;
+}
+
+.revealed {
+  background-color: #f0f0f0;
+  cursor: default;
+  border: 1px solid #aaa;
+}
+
+.flagged {
+  color: red;
+}
+
+.cell span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.cell span[data-value="1"] { color: blue; }
+.cell span[data-value="2"] { color: green; }
+.cell span[data-value="3"] { color: red; }
+.cell span[data-value="4"] { color: navy; }
+.cell span[data-value="5"] { color: brown; }
+.cell span[data-value="6"] { color: teal; }
+.cell span[data-value="7"] { color: black; }
+.cell span[data-value="8"] { color: gray; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a752c;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.difficulty {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
