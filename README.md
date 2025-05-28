@@ -1,3 +1,4 @@
+You can play this game on https://indhiraya.github.io/Design-and-Analysis-Algorithms/
 ### How to use this repository
 create directory
 ```
