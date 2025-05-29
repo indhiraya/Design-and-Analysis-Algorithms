@@ -1,3 +1,9 @@
+|Name | NRP | Class |
+|----------|----------|----------|
+| Mochammad Alif Nasrullah  | 5025231314  | DAA - K |
+| Alya Rahmatillah Machmud  | 5025231315 | DAA - K |
+| Indhira Ayu Puspita Ningrum  | 5025231316 | DAA - D |
+
 You can play this game on https://indhiraya.github.io/Design-and-Analysis-Algorithms/
 ### How to use this repository
 create directory
